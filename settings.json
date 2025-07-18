@@ -1,0 +1,130 @@
+{
+    "key": "shift+tab",
+    "command": "outdent",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus",
+    "vim.easymotion": true,
+    "editor.cursorBlinking": "expand",
+    "vim.cursorStylePerMode.insert": "line",
+    "editor.lineNumbers": "relative",
+    "vim.leader": "1",
+    "vim.normalModeKeyBindings": [ 
+        { 
+            "before" : ["<Leader>","s", "p"],
+            "after" : [":", "s", "p"]
+        }, 
+        { 
+            "before" : ["q"],
+            "after" : ["$"]
+        },
+        {
+            "before" : ["<Leader>","v", "s"],
+            "after" : [":", "v", "s"]
+        },
+        {
+            "before" : ["z"],
+            "after" : ["<C-w>", "<C-w>"]
+        },
+        {
+            "before" : ["t"],
+            "after" :  [":","b","n","e","x","t", "<CR>"]
+        },
+        // reccordar cntrl + del para sacar la consola y cntrl + end para agrandarla
+        // recordar  cntrl + shift + [ para code folding
+        // recordar  cntrl + shift + e para navegar por los archivos
+        {
+            "before" : ["<Leader>", "o"],
+            "after" :  [":", "e"]
+        },
+        {
+            "before" : ["r"],
+            "after" :  ["<C-r>"]
+        },
+    ],
+    "vim.visualModeKeyBindings": [ 
+        { 
+            "before" : ["q"],
+            "after" : ["$"]
+        },
+    ],
+
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color" : "#FFA410", 
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "editor.autoClosingBrackets": "always",
+    "editor.fontFamily": "CaskaydiaCove NF",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "C_Cpp.updateChannel": "Insiders",
+    "python.pythonPath": "/bin/python3",
+    "files.autoSave": "afterDelay",
+    "python.defaultInterpreterPath": "/home/santiago/Escritorio/Projects/FriendNet/dependencies",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // dot indennt
+    "editor.renderWhitespace": "all",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
+    },
+    "[c]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "cSpell.language": "en,es-ES",
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": -1
+}
